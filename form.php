@@ -5,7 +5,7 @@ var_dump($_POST);
 if(isset($_POST['basic-q1'])){
     //$name = $_POST['name'];
     // データベースに接続
-    $db = new PDO('mysql:host=localhost;dbname=iat2018_iat;charset=utf8','iat2018','mayu0822');
+    $db = new PDO('mysql:host=mysql708.db.sakura.ne.jp;dbname=iat2018_iat;charset=utf8','iat2018','mayu0822');
 
     // データをインサート
     foreach($_POST as $key => $value) {

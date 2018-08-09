@@ -1,6 +1,6 @@
 <?php
 // データベースに接続
-$db = new PDO('mysql:host=localhost;dbname=iat2018_iat;charset=utf8','iat2018','mayu0822');
+$db = new PDO('mysql:host=mysql708.db.sakura.ne.jp;dbname=iat2018_iat;charset=utf8','iat2018','mayu0822');
 
 // TODO 自動的にidを付与する方法を考える
 
