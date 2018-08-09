@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html lang = "ja">
 <head>
-    <meta charset = "UFT-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>フォームからデータを受け取る</title>
-    <link rel="stylesheet" type="text/css"  href="style.css">
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body class="top">
     <div class ="page-wrap">
