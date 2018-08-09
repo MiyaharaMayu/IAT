@@ -1,0 +1,135 @@
+/*test*/
+
+.next {
+    height: 50px;
+}
+
+.btn {
+    display: none;
+}
+
+.test {
+    text-align: center;
+}
+
+.test ul {
+    text-align: center;
+    list-style: none;
+    padding-bottom: 50px;
+}
+
+.test ul li {
+    width: 50%;
+    float: left;
+}
+
+.ul-btn {
+    margin-top: 100px;
+}
+
+.li-btn {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+/*intro*/
+
+.intro {
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.intro li {
+    font-size: 1.2em;
+}
+
+.appeal {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.program {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: solid 1px #CCC;
+}
+
+table {
+    margin: 10px auto;
+}
+
+td {
+    width: 400px;
+    height: 30px;
+}
+
+.categori {
+    width: 100px;
+}
+
+.note li {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*form*/
+
+textarea {
+    width: 70%;
+    height: 100px;
+    resize: vertical;
+}
+
+h5 {
+    font-size: 1.1em;
+    padding-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: solid 1px #009a9a;
+}
+
+.page {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.page p {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.page-wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #CCFFFF;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    margin-right: 0.5em;
+    color: red;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 350px;
+    height: 40px;
+}
+
+input[type="submit"] {
+    margin-top: 40px;
+    text-align: center;
+    margin: 40px auto;
+    font-size: 1.2em;
+}
