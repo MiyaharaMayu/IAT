@@ -5,7 +5,7 @@ $subject_id = 1;
 if(isset($_POST['NAS-J-q1'])){
     //$name = $_POST['name'];
     // データベースに接続
-    $db = new PDO('mysql:host=localhost;dbname=iat;charset=utf8','iatusr','iat0822');
+    $db = new PDO('mysql:host=localhost;dbname=iat2018_iat;charset=utf8','iat2018','mayu0822');
 
     // データをインサート
     foreach($_POST as $key => $value) {
