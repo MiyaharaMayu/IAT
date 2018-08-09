@@ -15,7 +15,7 @@ if(isset($_POST['basic-q1'])){
         $stmt->bindValue(':answer', $value, PDO::PARAM_STR);
         $stmt->execute();
     }
-    header( "Location: http://localhost/IAT/tipi.php" ) ;
+    header( "Location: http://iat2018.sakura.ne.jp/IAT/tipi.php" ) ;
     exit;
 }
 ?>

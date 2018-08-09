@@ -27,7 +27,7 @@
        </ul>
     </div>
     
-<form action="http://localhost/IAT/intro2.php">
+<form action="http://iat2018.sakura.ne.jp/IAT/intro2.php">
 <input type="submit" value="次へ">
 </form>
 </div>

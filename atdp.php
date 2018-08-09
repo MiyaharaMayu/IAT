@@ -15,7 +15,7 @@ if(isset($_POST['ATDP-q1'])){
         $stmt->bindValue(':answer', $value, PDO::PARAM_STR);
         $stmt->execute();
     }
-    header( "Location: http://localhost/IAT/thanks.php" ) ;
+    header( "Location: http://iat2018.sakura.ne.jp/IAT/thanks.php" ) ;
     exit;
 }
 ?>

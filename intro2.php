@@ -47,7 +47,7 @@
         </ul>
     </div>
     
-    <form action="http://localhost/IAT/intro3.php">
+    <form action="http://iat2018.sakura.ne.jp/IAT/intro3.php">
 <input type="submit" value="次へ">
 </form>
 </div>

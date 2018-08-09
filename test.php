@@ -43,7 +43,7 @@ if(isset($_POST['subject_id'])){
 
 }
 if($block_id == 7){
-    header( "Location: http://localhost/IAT/form.php" ) ;
+    header( "Location: http://iat2018.sakura.ne.jp/IAT/form.php" ) ;
     exit;
 }
 // ブロック数を更新

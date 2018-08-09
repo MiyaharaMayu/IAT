@@ -20,7 +20,7 @@
 
     </div>
     
-    <form action="http://localhost/IAT/test2.php">
+    <form action="http://iat2018.sakura.ne.jp/IAT/test2.php">
 <input type="submit" value="準備ができたのではじめる">
 </form>
 
