@@ -10,6 +10,16 @@ use App\Test;
 class TestController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -31,7 +41,7 @@ class TestController extends Controller
     {
         // 試行回数
         $time = $request->count;
-        $subject_id = $request->subject_id;
+        $subject_id = $request->user()->id;
         $block_id = $request->block_id;
         // 配列で渡されるが、とる時に文字列になるので、再度配列に変換
         $trials = explode(',', $request->trial[0]);
@@ -54,7 +64,7 @@ class TestController extends Controller
         $block_id++;
         // 5回の操作が終われば
         if($block_id == 6) {
-            return view('questions.create');
+            return redirect('questions/create');
         }
         return view('tests.create', 
                     ['block_id' => $block_id]);

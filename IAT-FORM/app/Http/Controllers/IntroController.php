@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 class IntroController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

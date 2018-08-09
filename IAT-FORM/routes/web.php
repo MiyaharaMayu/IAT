@@ -20,3 +20,7 @@ Route::resource('tests', 'TestController')->only([
 Route::resource('questions', 'QuestionController')->only([
     'create', 'store'
 ]);;
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

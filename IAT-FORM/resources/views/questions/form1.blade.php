@@ -124,7 +124,7 @@
           <input id="radio-4" type="checkbox" name="q[13]" value="ろう学生懇談会"><label for="radio-4">全日本ろう学生懇談会(例　近コンなどもふくむ)</label><br>
           <input id="radio-5" type="checkbox" name="q[13]" value="家族"><label for="radio-5">家族</label><br>
           <input id="radio-6" type="checkbox" name="q[13]" value="on" onclick="connecttext('textforscb3',this.checked);"><label for="radio-6">その他</label>：
-          <input type="text" name="q[13]" id="textforscb3" value="">
+          <input type="text" name="tex" id="textforscb3">
         </div>
 
         <h5>幼稚園～高校までの教育歴について教えてください</h5>
@@ -134,7 +134,7 @@
           <input id="radio-2" type="radio" name="q[14]" value="幼稚園" required><label for="radio-2">幼稚園</label><br>
           <input id="radio-3" type="radio" name="q[14]" value="通っていない" required><label for="radio-3">通っていない</label><br>
           <input id="radio-4" type="radio" name="q[14]" value="on" onclick="connecttext('textforscb3',this.checked);"><label for="radio-4">その他</label>：
-          <input type="text" name="q[14]" id="textforscb3" value="">
+          <input type="text" name="tex" id="textforscb3">
         </div>
         <div>
           <p>Q16.小学校はどこに通っていましたか？</p>
@@ -143,7 +143,7 @@
           <input id="radio-3" type="radio" name="q[15]" value="通常学校，定期的に通級指導学級（ことばの教室，聞こえの教室など）" required><label for="radio-3">通常学校，定期的に通級指導学級（ことばの教室，聞こえの教室など）</label><br>
           <input id="radio-4" type="radio" name="q[15]" value="普通校" required><label for="radio-3">通常学校</label><br>
           <input id="radio-5" type="radio" name="q[15]" value="on" onclick="connecttext('textforscb3',this.checked);"><label for="radio-5">その他</label>：
-          <input type="text" name="q[15]" id="textforscb3" value="">
+          <input type="text" name="tex" id="textforscb3">
         </div>
         <div>
           <p>Q17.中学校はどこに通っていましたか？</p>
@@ -152,7 +152,7 @@
           <input id="radio-3" type="radio" name="q[16]" value="通常学校，定期的に通級指導学級（ことばの教室，聞こえの教室など）" required><label for="radio-3">通常学校，定期的に通級指導学級（ことばの教室，聞こえの教室など）</label><br>
           <input id="radio-4" type="radio" name="q[16]" value="普通校" required><label for="radio-3">通常学校</label><br>
           <input id="radio-5" type="radio" name="q[16]" value="on" onclick="connecttext('textforscb3',this.checked);"><label for="radio-5">その他</label>：
-          <input type="text" name="q[16]" id="textforscb3" value="">
+          <input type="text" name="tex" id="textforscb3">
         </div>
         <div>
           <p>Q18.高校はどこに通っていましたか？</p>
@@ -161,7 +161,7 @@
           <input id="radio-3" type="radio" name="q[17]" value="通常学校，定期的に通級指導学級（ことばの教室，聞こえの教室など）" required><label for="radio-3">通常学校，定期的に通級指導学級（ことばの教室，聞こえの教室など）</label><br>
           <input id="radio-4" type="radio" name="q[17]" value="普通校" required><label for="radio-3">通常学校</label><br>
           <input id="radio-5" type="radio" name="q[17]" value="on" onclick="connecttext('textforscb3',this.checked);"><label for="radio-5">その他</label>：
-          <input type="text" name="q[17]" id="textforscb3" value="">
+          <input type="text" name="tex" id="textforscb3">
         </div>
 
         <h5>普段の会話方法について教えてください</h5>
@@ -172,7 +172,7 @@
           <input id="radio-3" type="radio" name="q[18]" value="筆談" required><label for="radio-3">筆談</label><br>
           <input id="radio-4" type="radio" name="q[18]" value="キュー" required><label for="radio-4">キュー</label><br>
           <input id="radio-5" type="radio" name="q[18]" value="on" onclick="connecttext('textforscb3',this.checked);"><label for="radio-5">その他</label>：
-          <input type="text" name="q[18]" id="textforscb3" value="">
+          <input type="text" name="tex" id="textforscb3">
         </div>
         <div>
           <p>Q20.学校でよく使う会話の手段は何ですか？</p>
@@ -180,8 +180,8 @@
           <input id="radio-2" type="radio" name="q[19]" value="手話" required><label for="radio-2">手話</label><br>
           <input id="radio-3" type="radio" name="q[19]" value="筆談" required><label for="radio-3">筆談</label><br>
           <input id="radio-4" type="radio" name="q[19]" value="キュー" required><label for="radio-4">キュー</label><br>
-          <input id="radio-5" type="radio" name="q[19]" value="on" onclick="connecttext('textforscb3',this.checked);"><labe for="radio-5"l>その他</label>：
-          <input type="text" name="q[19]" id="textforscb3" value="">
+          <input id="radio-5" type="radio" name="q[19]" value="on" onclick="connecttext('textforscb3',this.checked);"><labe for="radio-5">その他</label>：
+          <input type="text" name="tex" id="textforscb3">
         </div>
         <div>
           <p>Q21.街中でよく使う会話の手段は何ですか？</p>
@@ -189,8 +189,8 @@
           <input id="radio-2" type="radio" name="q[20]" value="手話" required><label for="radio-2">手話</label><br>
           <input id="radio-3" type="radio" name="q[20]" value="筆談" required><label for="radio-3">筆談</label><br>
           <input id="radio-4" type="radio" name="q[20]" value="キュー" required><label for="radio-4">キュー</label><br>
-          <input id="radio-5" type="radio" name="q[20]" value="on" onclick="connecttext('textforscb3',this.checked);"><labe for="radio-5"l>その他</label>：
-          <input type="text" name="q[20]" id="textforscb3" value="">
+          <input id="radio-5" type="radio" name="q[20]" value="on" onclick="connecttext('textforscb3',this.checked);"><labe for="radio-5">その他</label>：
+          <input type="text" name="tex" id="textforscb3">
         </div>
 
         <div>
