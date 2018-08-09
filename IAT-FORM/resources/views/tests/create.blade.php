@@ -23,13 +23,13 @@
     <form action="{{ url('tests') }}" method="post" name="myForm">
         @csrf
         @method('POST')
-        <input class="" type="hidden" name="subject_id" value="1"/>
-        <input class="" type="hidden" name="block_id" value=" {{$block_id}}"/>
-        <input class="" type="hidden" name="count" value="1"/>
-        <input class="" type="hidden" name="trial[]" value=""/>
-        <input class="" type="hidden" name="word[]" value=""/>
-        <input class="" type="hidden" name="error_num[]" value=""/>
-        <input class="" type="hidden" name="reaction_time[]" value=""/>
+        <input type="hidden" name="subject_id" value="1"/>
+        <input type="hidden" name="block_id" value=" {{$block_id}}"/>
+        <input type="hidden" name="count" value="1"/>
+        <input type="hidden" name="trial[]" value=""/>
+        <input type="hidden" name="word[]" value=""/>
+        <input type="hidden" name="error_num[]" value=""/>
+        <input type="hidden" name="reaction_time[]" value=""/>
         <input class="btn" type = "submit" value ="送信">
     </form>
 

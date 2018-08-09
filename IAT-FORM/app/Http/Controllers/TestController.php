@@ -50,7 +50,9 @@ class TestController extends Controller
             $test->reaction_time = $reaction_times[$i];
             $test->save();
         }
+
         $block_id++;
+        // 5回の操作が終われば
         if($block_id == 6) {
             return view('questions.create');
         }
