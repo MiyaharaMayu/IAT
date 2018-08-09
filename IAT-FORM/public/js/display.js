@@ -2,6 +2,7 @@ $(function () {
     // 被検者とブロックのidは受け取る
     var subject_id = $('input:hidden[name="subject_id"]').val();
     var block_id = $('input:hidden[name="block_id"]').val();
+    console.log(block_id);
     var trial = new Array();
     var word = new Array();
     var error_num = new Array();
@@ -106,24 +107,30 @@ $(function () {
             $(".words").css({
                 opacity: '0'
             });
-
+            console.log(count);
+            console.log(trial);
+            console.log(word);
+            console.log(error_num);
+            console.log(reaction_time);
             // 規定回数終わったら、これをフォームで送信
             if (count == 20 && !(record_flag)) {
+                $('input:hidden[name="count"]').val(count);
                 $('input:hidden[name="subject_id"]').val(subject_id);
                 $('input:hidden[name="block_id"]').val(block_id);
-                $('input:hidden[name="trial"]').val(trial);
-                $('input:hidden[name="word"]').val(word);
-                $('input:hidden[name="error_num"]').val(error_num);
-                $('input:hidden[name="reaction_time"]').val(reaction_time);
+                $('input:hidden[name="trial[]"]').val(trial);
+                $('input:hidden[name="word[]"]').val(word);
+                $('input:hidden[name="error_num[]"]').val(error_num);
+                $('input:hidden[name="reaction_time[]"]').val(reaction_time);
                 var $form = jQuery('form[name="myForm"]');
                 $form.submit();
             } else if (count == 40 && record_flag) {
+                $('input:hidden[name="count"]').val(count);
                 $('input:hidden[name="subject_id"]').val(subject_id);
                 $('input:hidden[name="block_id"]').val(block_id);
-                $('input:hidden[name="trial"]').val(trial);
-                $('input:hidden[name="word"]').val(word);
-                $('input:hidden[name="error_num"]').val(error_num);
-                $('input:hidden[name="reaction_time"]').val(reaction_time);
+                $('input:hidden[name="trial[]"]').val(trial);
+                $('input:hidden[name="word[]"]').val(word);
+                $('input:hidden[name="error_num[]"]').val(error_num);
+                $('input:hidden[name="reaction_time[]"]').val(reaction_time);
                 var $form = jQuery('form[name="myForm"]');
                 $form.submit();
             }
@@ -188,23 +195,30 @@ $(function () {
                 opacity: '0'
             });
 
+            console.log(count);
+            console.log(trial);
+            console.log(word);
+            console.log(error_num);
+
             // 規定回数終わったら、これをフォームで送信
             if (count == 20 && !(record_flag)) {
+                $('input:hidden[name="count"]').val(count);
                 $('input:hidden[name="subject_id"]').val(subject_id);
                 $('input:hidden[name="block_id"]').val(block_id);
-                $('input:hidden[name="trial"]').val(trial);
-                $('input:hidden[name="word"]').val(word);
-                $('input:hidden[name="error_num"]').val(error_num);
-                $('input:hidden[name="reaction_time"]').val(reaction_time);
+                $('input:hidden[name="trial[]"]').val(trial);
+                $('input:hidden[name="word[]"]').val(word);
+                $('input:hidden[name="error_num[]"]').val(error_num);
+                $('input:hidden[name="reaction_time[]"]').val(reaction_time);
                 var $form = jQuery('form[name="myForm"]');
                 $form.submit();
             } else if (count == 40 && record_flag) {
+                $('input:hidden[name="count"]').val(count);
                 $('input:hidden[name="subject_id"]').val(subject_id);
                 $('input:hidden[name="block_id"]').val(block_id);
-                $('input:hidden[name="trial"]').val(trial);
-                $('input:hidden[name="word"]').val(word);
-                $('input:hidden[name="error_num"]').val(error_num);
-                $('input:hidden[name="reaction_time"]').val(reaction_time);
+                $('input:hidden[name="trial[]"]').val(trial);
+                $('input:hidden[name="word[]"]').val(word);
+                $('input:hidden[name="error_num[]"]').val(error_num);
+                $('input:hidden[name="reaction_time[]"]').val(reaction_time);
                 var $form = jQuery('form[name="myForm"]');
                 $form.submit();
             }

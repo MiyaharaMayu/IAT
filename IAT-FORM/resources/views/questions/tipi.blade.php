@@ -1,26 +1,3 @@
-<?php
-
-$subject_id = 1;
-//r_dump($_POST);
-if(isset($_POST['TIPI-q1'])){
-    //$name = $_POST['name'];
-    // データベースに接続
-    //$db = new PDO('mysql:host=localhost;dbname=iat;charset=utf8','iatusr','iat0822');
-    $db = new PDO('mysql:host=mysql708.db.sakura.ne.jp;dbname=iat2018_iat;charset=utf8','iat2018','mayu0822');
-
-    // データをインサート
-    foreach($_POST as $key => $value) {
-        $stmt = $db -> prepare("INSERT INTO question (subject_id, question_id, answer) VALUES (:subject_id, :question_id, :answer)");
-        $stmt->bindValue(':subject_id', $subject_id, PDO::PARAM_INT);
-        $stmt->bindValue(':question_id', $key, PDO::PARAM_STR);
-        $stmt->bindValue(':answer', $value, PDO::PARAM_STR);
-        $stmt->execute();
-    }
-    header( "Location: http://iat2018.sakura.ne.jp/IAT/nas-j.php" ) ;
-    exit;
-}
-?>
-
 <!DOCTYPE html>
 <html lang = "ja">
 <head>
