@@ -8,7 +8,7 @@
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 
-<body>
+<body class = "comtainer">
   <div class ="page-wrap row">
     <div class = "page col-11">
       <h1>質問は以上です。<br>

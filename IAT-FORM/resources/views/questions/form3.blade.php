@@ -8,7 +8,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 
-<body>
+<body class = "comtainer">
   <div class ="page-wrap row">
     <div class ="page col-11">
       <p>次の質問についてこの前期中のあなたがどれほど当てはまるか、あるいはどの程度そう思うかお答えください。</p>

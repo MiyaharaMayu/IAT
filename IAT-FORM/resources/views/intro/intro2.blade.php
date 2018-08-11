@@ -8,9 +8,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
-<body class="top">
+<body class="top container">
     <div class ="page-wrap row">
-        <div class ="page col-11">
+        <div class ="page col-11 intro">
             <h1>単語の分類</h1>
             <h3 class ="sub-info">約5分</h3>
             <div class="description">
