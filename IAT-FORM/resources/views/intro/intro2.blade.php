@@ -11,26 +11,26 @@
 <body class="top">
     <div class ="page-wrap">
         <div class ="page">
-            <h1>IAT</h1>
+            <h1>単語の分類</h1>
             <h3 class ="sub-info">約5分</h3>
             <div class="description">
                 <p>これからする課題では、単語が呈示されますので、グループに分けてください。</p>
                 <p class ="appeal">できるだけミスしないように、できるだけ速く呈示された項目を分類してください。</p>
                 <br>
-                <p>以下に示してあるのは、カテゴリラベルと、それらのカテゴリに属する項目のリストです。</p>
+                <p>以下に示してあるのは、グループラベルと、それらのグループに属する項目のリストです。</p>
 
                 <table border="1">
                     <tr>
-                        <th>カテゴリ</th>
-                        <th>項目</th>
+                        <th>グループ</th>
+                        <th>単語</th>
                     </tr>
                     <tr>
                         <td class ="categori">良い</td>
-                        <td>嬉しさ、愛情、平和、素晴らしい、楽しみ</td>
+                        <td>うれしさ、愛情、平和、すばらしい、楽しみ</td>
                     </tr>
                     <tr>
                         <td class ="categori">悪い</td>
-                        <td>苦悩、ひどい、恐ろしい、失敗、邪悪な</td>
+                        <td>苦悩、ひどい、恐ろしい、失敗、戦争</td>
                     </tr>
                     <tr>
                         <td class ="categori">聴覚障害者</td>
