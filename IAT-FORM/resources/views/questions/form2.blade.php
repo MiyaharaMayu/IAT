@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div class ="page-wrap">
-    <div class ="page">
+  <div class ="page-wrap row">
+    <div class ="page col-11">
         <p>1から10までのことばがあなた自身にどのくらい当てはまるかについて，下の枠内の1（全く違うと思う）から7（強くそう思う）までの数字のうちもっとも適切なものを括弧内にチェック入れてください。文全体を総合的に見て，自分にどれだけ当てはまるかを評価してください。
     </p>
       <form action="{{ url('questions') }}" method="post">

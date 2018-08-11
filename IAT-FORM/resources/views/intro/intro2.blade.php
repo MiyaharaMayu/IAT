@@ -9,8 +9,8 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body class="top">
-    <div class ="page-wrap">
-        <div class ="page">
+    <div class ="page-wrap row">
+        <div class ="page col-11">
             <h1>単語の分類</h1>
             <h3 class ="sub-info">約5分</h3>
             <div class="description">

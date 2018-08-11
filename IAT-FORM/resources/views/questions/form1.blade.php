@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <div class ="page-wrap">
-    <div class = "page">
+  <div class ="page-wrap row">
+    <div class = "col-11 page">
       <h3>以下の質問に答えてください</h3>
       <form action="{{ url('questions') }}" method="post">
         @csrf

@@ -8,17 +8,18 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
-<body class="test top">
+<body class="test top row">
+    <div class ="col-12">
     <div class="description">
     </div>
     
     <ul class="left-right">
-        <li class = "left"></li>
-        <li class = "right"></li>
+        <li class = "h3 left"></li>
+        <li class = "h3 right"></li>
     </ul>
 
-    <div class ="next"></div>
-    <div class ="words"></div>
+    <div class ="h3 next"></div>
+    <div class ="h4 words"></div>
 
     <form action="{{ url('tests') }}" method="post" name="myForm">
         @csrf
@@ -35,17 +36,18 @@
 
     <ul class="ul-btn">
         <li>
-            <div class = "li-btn left li-btn-left"></div>
+            <div class = "li-btn left li-btn-left h3"></div>
         </li>
         <li>
-            <div class = "li-btn right li-btn-right"></div>
+            <div class = "li-btn right li-btn-right h3"></div>
         </li>
     </ul>
     <div class="li-btn space-btn">
-        <p>START</p>
+        <h2>START</h2>
     </div>
     
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/display.js') }}"></script>
+</div>
 </body>
 </html>

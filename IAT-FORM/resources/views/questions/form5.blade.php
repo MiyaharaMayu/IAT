@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div class ="page-wrap">
-    <div class = "page">
+  <div class ="page-wrap row">
+    <div class = "page col-11">
       <h1>質問は以上です。<br>
       ご回答くださりありがとうございました。</h1>
 

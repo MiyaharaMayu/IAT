@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div class ="page-wrap">
-    <div class ="page">
+  <div class ="page-wrap row">
+    <div class ="page col-11">
       <p>次の質問についてこの前期中のあなたがどれほど当てはまるか、あるいはどの程度そう思うかお答えください。</p>
       <form action="{{ url('questions') }}" method="post">
         @csrf

@@ -8,8 +8,8 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body class="top">
-    <div class ="page-wrap">
-        <div class ="page">
+    <div class ="page-wrap row">
+        <div class ="col-11 page">
             <h1></h1>
             <div class="description">
                 <h3>テストに参加してくださってありがとうございます。</h3>
