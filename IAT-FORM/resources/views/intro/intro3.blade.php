@@ -8,9 +8,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
-<body class="top">
-    <div class ="page-wrap">
-        <div class ="page">
+<body class="top container">
+    <div class ="page-wrap row">
+        <div class ="page col-11 intro">
             <h1>単語の分類</h1>
             <div class="description">
                 <p>これから画面中央に単語がでてきます。</p>

@@ -8,10 +8,11 @@
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 
-<body>
-  <div class ="page-wrap">
-    <div class ="page">
+<body  class = "comtainer">
+  <div class ="page-wrap row">
+    <div class ="page col-11">
       <p>次の項目についてあなたがどの程度同意するか、お答えください。</p>
+      <p>※なお、ここでは「障害（者）」とは「聴覚障害（者）」をさします。</p>
       <form action="{{ url('questions') }}" method="post">
         @csrf
         @method('POST')

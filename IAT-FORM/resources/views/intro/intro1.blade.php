@@ -7,9 +7,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
-<body class="top">
-    <div class ="page-wrap">
-        <div class ="page">
+<body class="top container">
+    <div class ="page-wrap row">
+        <div class ="col-11 page intro">
             <h1></h1>
             <div class="description">
                 <h3>このたびは調査にご協力くださりありがとうございます。</h3>
