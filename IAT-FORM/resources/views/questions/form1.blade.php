@@ -304,14 +304,14 @@
           <input id="radio-234" type="checkbox" name="q[22]" value="わからない">
           <label for="radio-234">わからない</label><br>
         </div>
-        
+
         <input type="submit" value="次へ">
       </form>
     </div>
   </div>
   <script src="{{ asset('js/app.js') }}"></script>
   <script src="{{ asset('js/display.js') }}"></script>
-  <script> 
+  <script>
   $(function () {
 
     // radioボタンとtextを動的に切り替える
