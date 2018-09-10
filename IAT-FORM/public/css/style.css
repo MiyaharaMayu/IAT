@@ -1,5 +1,4 @@
 /*test*/
-
 .left-right {
     margin-top: 30px;
 }
@@ -14,6 +13,8 @@
 
 .test {
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .test ul {
@@ -44,7 +45,6 @@
 }
 
 /*intro*/
-
 .intro {
     margin-left: 0px;
     padding-left: 0px;
@@ -89,7 +89,6 @@ td {
 }
 
 /*form*/
-
 textarea {
     width: 70%;
     height: 100px;

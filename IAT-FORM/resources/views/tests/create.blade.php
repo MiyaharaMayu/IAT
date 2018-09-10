@@ -8,7 +8,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
-<body class="test top row">
+<body class="test top">
+    <div class="row">
     <div class ="col-12">
     <div class="description">
     </div>
@@ -44,6 +45,7 @@
     </ul>
     <div class="li-btn space-btn">
         <h2>START</h2>
+    </div>
     </div>
     
     <script src="{{ asset('js/app.js') }}"></script>
