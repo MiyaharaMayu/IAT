@@ -14,6 +14,9 @@
 .test {
     text-align: center;
     background-color: white !important;
+    max-width: 1000px;
+    margin: 0 auto;
+
 }
 
 .test ul {
@@ -89,6 +92,7 @@ td {
     font-weight: bold;
     margin: 10px;
 }
+
 
 .description {
     margin: 50px 10px;

@@ -155,12 +155,13 @@ $(function () {
                 $('input:hidden[name="reaction_time[]"]').val(reaction_time);
                 var $form = jQuery('form[name="myForm"]');
                 $form.submit();
+            } else {
+                // 次の単語を表示する
+                $(".words").text(words[block_id - 1][num]);
+                $(".words").stop().animate({
+                    opacity: '1'
+                }, 200);
             }
-            // 次の単語を表示する
-            $(".words").text(words[block_id - 1][num]);
-            $(".words").stop().animate({
-                opacity: '1'
-            }, 200);
 
             // 間違えていたら、エラーカウントを増やす
         } else if ((pushed_num == 69 || pushed_num == 73) && !space_flag) {
@@ -243,12 +244,14 @@ $(function () {
                 $('input:hidden[name="reaction_time[]"]').val(reaction_time);
                 var $form = jQuery('form[name="myForm"]');
                 $form.submit();
+            } else {
+                // それ以外は次の単語を表示
+                $(".words").text(words[block_id - 1][num]);
+                $(".words").stop().animate({
+                    opacity: '1'
+                }, 200);
             }
-            // それ以外は次の単語を表示
-            $(".words").text(words[block_id - 1][num]);
-            $(".words").stop().animate({
-                opacity: '1'
-            }, 200);
+
 
             // 間違えていたら、エラーカウントを増やす
         } else if ((pushed_num == 69 || pushed_num == 73) && !space_flag) {
