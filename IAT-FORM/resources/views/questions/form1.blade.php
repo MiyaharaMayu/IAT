@@ -22,18 +22,6 @@
         <input type="hidden" name="block_id" value="{{$block_id}}">
 
 
-      
-
-       
-       <div>
-          <input type="radio" name="radioitem" value="いちご"><label for =""> いちご</label><br>
-          <input type="radio" name="radioitem" value="メロン"> <label for =""> メロン</label><br>
-          <input type="radio" name="radioitem" value="その他"> <label for =""> その他</label><br>
-          <input type="text" class="form-control" id="inputother" disabled="disabled">
-       </div>
-
-
-
 
         <div>
           <label>Q1.名前</label><br>
@@ -51,8 +39,8 @@
           <label for="radio-31">男性</label><br>
           <input id="radio-32" type="radio" name="q[2]" value="女性" class="radio-input" required>
           <label for="radio-32">女性</label><br>
-          <input id="radio-33" type="radio" name="q[2]" value="未回答" class="radio-input" required>
-          <label for="radio-33">未回答</label><br>
+          <input id="radio-33" type="radio" name="q[2]" value="その他" class="radio-input" required>
+          <label for="radio-33">その他</label><br>
         </div>
 
         <div>
@@ -188,7 +176,7 @@
 
           <input id="radio-146" type="checkbox" name="q[13]" value="on" onclick="connecttext('textforscb146',this.checked);">
           <label for="radio-146">その他</label>：
-          <input type="text" name="tex" id="textforscb146" disabled>
+          <input class="text-input" type="text" name="tex" id="textforscb146">
         </div>
 
         <h5>幼稚園～高校までの教育歴について教えてください</h5>
@@ -203,7 +191,7 @@
 
           <input id="radio-154" type="radio" name="q[14]" value="on">
           <label for="radio-154">その他</label>：
-          <input type="text" name="tex" id="textforscb154" disabled>
+          <input class="text-input" type="text" name="tex" id="textforscb154">
         </div>
         <div class="radio-text">
           <p>Q16.小学校はどこに通っていましたか？</p>
@@ -217,7 +205,7 @@
           <label for="radio-164">通常学校</label><br>
           <input id="radio-165" type="radio" name="q[15]" value="on">
           <label for="radio-165">その他</label>：
-          <input type="text" name="tex" id="textforscb165" disabled>
+          <input class="text-input" type="text" name="tex" id="textforscb165">
         </div>
         <div class="radio-text">
           <p>Q17.中学校はどこに通っていましたか？</p>
@@ -231,7 +219,7 @@
           <label for="radio-174">通常学校</label><br>
           <input id="radio-175" type="radio" name="q[16]" value="on">
           <label for="radio-175">その他</label>：
-          <input type="text" name="tex" id="textforscb175" disabled>
+          <input class="text-input" type="text" name="tex" id="textforscb175">
         </div>
         <div class="radio-text">
           <p>Q18.高校はどこに通っていましたか？</p>
@@ -245,7 +233,7 @@
           <label for="radio-184">通常学校</label><br>
           <input id="radio-185" type="radio" name="q[17]" value="on">
           <label for="radio-185">その他</label>：
-          <input type="text" name="tex" id="textforscb185" disabled>
+          <input class="text-input" type="text" name="tex" id="textforscb185">
         </div>
 
         <h5>普段の会話方法について教えてください</h5>
@@ -261,7 +249,7 @@
           <label for="radio-194">キュー</label><br>
           <input id="radio-195" type="radio" name="q[18]" value="on">
           <label for="radio-195">その他</label>：
-          <input class="text" type="text" name="tex" id="textforscb195" disabled>
+          <input class="text-input" type="text" name="tex" id="textforscb195">
         </div>
         <div class="radio-text">
           <p>Q20.学校でよく使う会話の手段は何ですか？</p>

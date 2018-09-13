@@ -63,10 +63,13 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $id = User::max('id') + 1;
+        $pattern = $id % 2;
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => Hash::make('iat-password'),
+            'password' => Hash::make('iat-password'.$id),
+            'pattern' => $pattern,
         ]);
     }
 }

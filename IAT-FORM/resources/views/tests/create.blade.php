@@ -27,6 +27,7 @@
         @method('POST')
         <input type="hidden" name="subject_id" value="1"/>
         <input type="hidden" name="block_id" value=" {{$block_id}}"/>
+        <input type="hidden" name="pattern" value=" {{$pattern}}"/>
         <input type="hidden" name="count" value="1"/>
         <input type="hidden" name="trial[]" value=""/>
         <input type="hidden" name="word[]" value=""/>

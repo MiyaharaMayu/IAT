@@ -24,11 +24,13 @@ class TestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         $block_id = 1;
+        $pattern = $request->user()->pattern;
         return view('tests.create', 
-                    ['block_id' => $block_id]);
+                    ['block_id' => $block_id,
+                     'pattern' => $pattern]);
     }
 
     /**
@@ -43,6 +45,7 @@ class TestController extends Controller
         $time = $request->count;
         $subject_id = $request->user()->id;
         $block_id = $request->block_id;
+        $pattern = $request->pattern;
         // 配列で渡されるが、とる時に文字列になるので、再度配列に変換
         $trials = explode(',', $request->trial[0]);
         $words = explode(',', $request->word[0]);
@@ -67,6 +70,7 @@ class TestController extends Controller
             return redirect('questions/create');
         }
         return view('tests.create', 
-                    ['block_id' => $block_id]);
+                    ['block_id' => $block_id,
+                     'pattern' => $pattern]);
     }
 }
