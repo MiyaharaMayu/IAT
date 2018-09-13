@@ -1,3 +1,26 @@
+function connecttext(textid, ischecked) {
+    console.log("teats");
+    if (ischecked == true) {
+        // チェックが入っていたら有効化
+        document.getElementById(textid).disabled = false;
+    } else {
+        // チェックが入っていなかったら無効化
+        document.getElementById(textid).disabled = true;
+    }
+}
+
+//その他の連携
+$(function () {
+    $('input[name="radioitem"]:radio').change(function () {
+        var radioval = $(this).val();
+        if (radioval == 'その他') {
+            $('#inputother').removeAttr('disabled');
+        } else {
+            $('#inputother').attr('disabled', 'disabled');
+        }
+    });
+});
+
 $(function () {
     // 被検者とブロックのidは受け取る
     var subject_id = $('input:hidden[name="subject_id"]').val();
@@ -24,11 +47,11 @@ $(function () {
         ['うれしさ', '愛情', '平和', 'すばらしい', '楽しみな', '補聴器', '手話', '筆談', '聴覚障害', '聞こえない', '苦悩', 'ひどい', '恐ろしい', '失敗', '戦争']
     ];
     var ans = [
-        [37, 37, 37, 37, 37, 39, 39, 39, 39, 39],
-        [37, 37, 37, 37, 37, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39],
-        [37, 37, 37, 37, 37, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39],
-        [37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 39, 39, 39, 39, 39],
-        [37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 39, 39, 39, 39, 39],
+        [69, 69, 69, 69, 69, 73, 73, 73, 73, 73],
+        [69, 69, 69, 69, 69, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73],
+        [69, 69, 69, 69, 69, 73, 73, 73, 73, 73, 73, 73, 73, 73, 73],
+        [69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 73, 73, 73, 73, 73],
+        [69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 73, 73, 73, 73, 73],
     ];
 
     // 今表示してあるのが何番目の要素かを保存
@@ -62,9 +85,9 @@ $(function () {
         var index = $('.li-btn').index(this);
         var pushed_num;
         if (index == 0) {
-            pushed_num = 37;
+            pushed_num = 69;
         } else if (index == 1) {
-            pushed_num = 39;
+            pushed_num = 73;
         } else {
             pushed_num = 32;
         }
@@ -76,8 +99,8 @@ $(function () {
                     space_flag = false;
                     $(".space-btn").hide();
                     break;
-                case 39: // Key[→]
-                case 37: // Key[←]
+                case 73: // Key[→]
+                case 69: // Key[←]
 
                     // 時間計測
                     end_time = new Date().getTime();
@@ -141,7 +164,7 @@ $(function () {
             }
 
             // 間違えていたら、エラーカウントを増やす
-        } else if ((pushed_num == 37 || pushed_num == 39) && !space_flag) {
+        } else if ((pushed_num == 69 || pushed_num == 73) && !space_flag) {
             $(".next").text("×");
             count_error++;
         }
@@ -164,8 +187,8 @@ $(function () {
                     space_flag = false;
                     $(".space-btn").hide();
                     break;
-                case 39: // Key[→]
-                case 37: // Key[←]
+                case 73: // Key[→]
+                case 69: // Key[←]
 
                     // 時間計測
                     end_time = new Date().getTime();
@@ -231,7 +254,7 @@ $(function () {
 
 
             // 間違えていたら、エラーカウントを増やす
-        } else if ((pushed_num == 37 || pushed_num == 39) && !space_flag) {
+        } else if ((pushed_num == 69 || pushed_num == 73) && !space_flag) {
             $(".next").text("×");
             count_error++;
 
