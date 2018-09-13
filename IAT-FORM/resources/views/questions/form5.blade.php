@@ -18,6 +18,7 @@
         @csrf
         @method('POST')
         <input type="hidden" name="block_id" value="{{$block_id}}">
+        
         <div>
           <label for="free">
             <p>気づいたこと、ご意見などがある場合は以下に入力して送信してください</p>
@@ -28,18 +29,22 @@
         <p>
           もしこの実験によって気分が悪くなった場合は以下のメールアドレスまでご連絡ください。
         </p>
+        
         <p>
           miyamayu.experiment★gmail.com
         </P>
+        
         <p>
           上記のメールアドレスの★の部分を＠にかえて送信してください。
         </P>
+        
         <div>
           <input type="submit" value="送信する">
         </div>
+
       </form>
     </div>
   </div>
-
 </body>
+
 </html>
