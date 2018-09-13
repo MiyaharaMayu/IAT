@@ -163,20 +163,20 @@
 
         <div class="radio-text">
           <p>Q14.現在、どのような聴覚障害者とのつながりがありますか？</p>
-          <input id="radio-141" type="checkbox" name="q[13]" value="ろう学校・難聴学級時代の友人">
+          <input id="radio-141" type="checkbox" name="q[13][]" value="ろう学校・難聴学級時代の友人">
           <label for="radio-141">ろう学校・難聴学級時代の友人</label><br>
-          <input id="radio-142" type="checkbox" name="q[13]" value="ろう学校・難聴学級以外の個人的な聴覚障害者の友人、知り合い">
+          <input id="radio-142" type="checkbox" name="q[13][]" value="ろう学校・難聴学級以外の個人的な聴覚障害者の友人、知り合い">
           <label for="radio-142">ろう学校・難聴学級以外の個人的な聴覚障害者の友人、知り合い</label><br>
-          <input id="radio-143" type="checkbox" name="q[13]" value="手話サークル">
+          <input id="radio-143" type="checkbox" name="q[13][]" value="手話サークル">
           <label for="radio-143">手話サークル</label><br>
-          <input id="radio-144" type="checkbox" name="q[13]" value="ろう学生懇談会">
+          <input id="radio-144" type="checkbox" name="q[13][]" value="ろう学生懇談会">
           <label for="radio-144">全日本ろう学生懇談会(例　近コンなどもふくむ)</label><br>
-          <input id="radio-145" type="checkbox" name="q[13]" value="家族">
+          <input id="radio-145" type="checkbox" name="q[13][]" value="家族">
           <label for="radio-145">家族</label><br>
 
-          <input id="radio-146" type="checkbox" name="q[13]" value="on" onclick="connecttext('textforscb146',this.checked);">
+          <input id="radio-146" type="checkbox" name="q[13][]" value="on">
           <label for="radio-146">その他</label>：
-          <input class="text-input" type="text" name="tex" id="textforscb146">
+          <input class="text-input" type="text" name="textforscb14" id="textforscb14" disabled>
         </div>
 
         <h5>幼稚園～高校までの教育歴について教えてください</h5>
@@ -191,7 +191,7 @@
 
           <input id="radio-154" type="radio" name="q[14]" value="on">
           <label for="radio-154">その他</label>：
-          <input class="text-input" type="text" name="tex" id="textforscb154">
+          <input class="text-input" type="text" name="textforscb15" id="textforscb15" disabled>
         </div>
         <div class="radio-text">
           <p>Q16.小学校はどこに通っていましたか？</p>
@@ -205,7 +205,7 @@
           <label for="radio-164">通常学校</label><br>
           <input id="radio-165" type="radio" name="q[15]" value="on">
           <label for="radio-165">その他</label>：
-          <input class="text-input" type="text" name="tex" id="textforscb165">
+          <input class="text-input" type="text" name="textforscb16" id="textforscb16" disabled>
         </div>
         <div class="radio-text">
           <p>Q17.中学校はどこに通っていましたか？</p>
@@ -219,7 +219,7 @@
           <label for="radio-174">通常学校</label><br>
           <input id="radio-175" type="radio" name="q[16]" value="on">
           <label for="radio-175">その他</label>：
-          <input class="text-input" type="text" name="tex" id="textforscb175">
+          <input class="text-input" type="text" name="textforscb17" id="textforscb17" disabled>
         </div>
         <div class="radio-text">
           <p>Q18.高校はどこに通っていましたか？</p>
@@ -233,7 +233,7 @@
           <label for="radio-184">通常学校</label><br>
           <input id="radio-185" type="radio" name="q[17]" value="on">
           <label for="radio-185">その他</label>：
-          <input class="text-input" type="text" name="tex" id="textforscb185">
+          <input class="text-input" type="text" name="textforscb18" id="textforscb18" disabled>
         </div>
 
         <h5>普段の会話方法について教えてください</h5>
@@ -249,7 +249,7 @@
           <label for="radio-194">キュー</label><br>
           <input id="radio-195" type="radio" name="q[18]" value="on">
           <label for="radio-195">その他</label>：
-          <input class="text-input" type="text" name="tex" id="textforscb195">
+          <input class="text-input" type="text" name="textforscb19" id="textforscb19" disabled>
         </div>
         <div class="radio-text">
           <p>Q20.学校でよく使う会話の手段は何ですか？</p>
@@ -263,7 +263,7 @@
           <label for="radio-204">キュー</label><br>
           <input id="radio-205" type="radio" name="q[19]" value="on">
           <label for="radio-205">その他</label>：
-          <input class="text-input" type="text" name="q[19]" id="textforscb205" disabled>
+          <input class="text-input" type="text" name="textforscb20" id="textforscb20" disabled>
         </div>
         <div class="radio-text">
           <p>Q21.街中でよく使う会話の手段は何ですか？</p>
@@ -277,7 +277,7 @@
           <label for="radio-214">キュー</label><br>
           <input id="radio-215" type="radio" name="q[20]" value="on">
           <label for="radio-215">その他</label>：
-          <input class="text-input" type="text" name="tex" id="textforscb215" disabled>
+          <input class="text-input" type="text" name="textforscb21" id="textforscb21" disabled>
         </div>
 
         <div>
@@ -299,13 +299,13 @@
 
         <div>
           <p> Q23.自分は以下のどれにあてはまると思いますか？</p>
-          <input id="radio-231" type="checkbox" name="q[22]" value="ろう">
+          <input id="radio-231" type="checkbox" name="q[22][]" value="ろう">
           <label for="radio-231">ろう</label><br>
-          <input id="radio-232" type="checkbox" name="q[22]" value="難聴">
+          <input id="radio-232" type="checkbox" name="q[22][]" value="難聴">
           <label for="radio-232">難聴</label><br>
-          <input id="radio-233" type="checkbox" name="q[22]" value="聴">
+          <input id="radio-233" type="checkbox" name="q[22][]" value="聴">
           <label for="radio-233">聴</label><br>
-          <input id="radio-234" type="checkbox" name="q[22]" value="わからない">
+          <input id="radio-234" type="checkbox" name="q[22][]" value="わからない">
           <label for="radio-234">わからない</label><br>
         </div>
 
@@ -317,7 +317,6 @@
   <script src="{{ asset('js/display.js') }}"></script>
   <script>
   $(function () {
-
     // radioボタンとtextを動的に切り替える
     $('.radio-text input').change(function() {
       var result = $(this).val();
@@ -328,7 +327,6 @@
       } else {
         $(this).nextAll('.text-input').prop("disabled", true);
       }
-      console.log( result );
     });
   });
   </script>

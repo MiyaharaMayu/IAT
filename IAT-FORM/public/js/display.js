@@ -9,7 +9,7 @@ $(function () {
     var subject_id = $('input:hidden[name="subject_id"]').val();
     var block_id = $('input:hidden[name="block_id"]').val();
     var pattern = $('input:hidden[name="pattern"]').val();
-    console.log(block_id);
+    // console.log(block_id);
     var trial = new Array();
     var word = new Array();
     var error_num = new Array();
@@ -39,7 +39,7 @@ $(function () {
     ];
     // パターンを入れ替える
     if (pattern != 1) {
-        console.log("gfga");
+        // console.log("gfga");
         categories = swap(categories, 1, 3);
         categories = swap(categories, 2, 4);
         words = swap(words, 1, 3);
@@ -124,11 +124,12 @@ $(function () {
             $(".words").css({
                 opacity: '0'
             });
-            console.log(count);
+            /*console.log(count);
             console.log(trial);
             console.log(word);
             console.log(error_num);
             console.log(reaction_time);
+            */
             // 規定回数終わったら、これをフォームで送信
             if (count == 20 && !(record_flag)) {
                 $('input:hidden[name="count"]').val(count);
@@ -213,11 +214,11 @@ $(function () {
                 opacity: '0'
             });
 
-            console.log(count);
+            /*console.log(count);
             console.log(trial);
             console.log(word);
             console.log(error_num);
-
+            */
             // 規定回数終わったら、これをフォームで送信
             if (count == 20 && !(record_flag)) {
                 $('input:hidden[name="count"]').val(count);
