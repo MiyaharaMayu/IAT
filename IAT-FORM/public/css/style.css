@@ -13,8 +13,10 @@
 
 .test {
     text-align: center;
+    background-color: white !important;
     max-width: 1000px;
     margin: 0 auto;
+
 }
 
 .test ul {
@@ -53,10 +55,12 @@
 
 .intro li {
     font-size: 1.2em;
+    margin: 50px 10px;
 }
 
 .intro p {
     font-size: 1.2em;
+    margin: 0%;
 }
 
 .appeal {
@@ -86,6 +90,12 @@ td {
 .note li {
     font-size: 1.2em;
     font-weight: bold;
+    margin: 10px;
+}
+
+
+.description {
+    margin: 50px 10px;
 }
 
 /*form*/
@@ -104,24 +114,14 @@ h5 {
     margin-bottom: solid 1px #009a9a;
 }
 
-.page {
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding-left: 10px;
-    background-color: white;
-}
-
 .page p {
-    font-size: 1em;
-    margin-top: 20px;
+    font-size: 1.2em;
     margin-bottom: 5px;
+    margin-top: 20px;
 }
 
-.page-wrap {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #CCFFFF;
+label {
+    font-size: 1.2em;
 }
 
 input[type="radio"],
@@ -144,4 +144,27 @@ input[type="submit"] {
     text-align: center;
     margin: 40px auto;
     font-size: 1.2em;
+}
+
+/*全体の書式*/
+.top {
+    width: 100%;
+    background-color: #CCFFFF;
+    margin: 0%;
+}
+
+.page-wrap {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #CCFFFF;
+    margin: 0% auto;
+}
+
+.page {
+    width: 100%;
+    margin: 20px auto;
+    padding-left: 10px;
+    border: #CCC solid 1px;
+    background-color: white;
 }

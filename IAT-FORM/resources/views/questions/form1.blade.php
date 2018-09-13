@@ -20,6 +20,21 @@
         @csrf
         @method('POST')
         <input type="hidden" name="block_id" value="{{$block_id}}">
+
+
+      
+
+       
+       <div>
+          <input type="radio" name="radioitem" value="いちご"><label for =""> いちご</label><br>
+          <input type="radio" name="radioitem" value="メロン"> <label for =""> メロン</label><br>
+          <input type="radio" name="radioitem" value="その他"> <label for =""> その他</label><br>
+          <input type="text" class="form-control" id="inputother" disabled="disabled">
+       </div>
+
+
+
+
         <div>
           <label>Q1.名前</label><br>
           <input type="text" name="q[0]" maxlength="10" value="" placeholder="" required>
@@ -279,6 +294,7 @@
 
         <div>
           <p>Q22.手話の獲得時期はいつですか？</p>
+ <input id="radio18-6" type="radio" name="q[21]" value="手話は使わない" required><label for="radio18-6">手話は使わない</label><br>
           <input id="radio-221" type="radio" name="q[21]" value="手話が第一言語" required>
           <label for="radio-221">手話が第一言語</label><br>
           <input id="radio-222" type="radio" name="q[21]" value="小学校まで" required>
