@@ -1,4 +1,86 @@
 /*test*/
+@media screen and (max-width: 768px) {
+    .base {
+        max-width: 100%;
+        margin: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .base {
+        max-width: 100%;
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .f-16 {
+        font-size: 16px;
+    }
+
+    .f-18 {
+        font-size: 18px;
+    }
+
+    .f-20 {
+        font-size: 20px;
+    }
+
+    .f-22 {
+        font-size: 22px;
+    }
+
+    .f-24 {
+        font-size: 24px;
+    }
+
+    .f-32 {
+        font-size: 32px;
+    }
+
+    .f-40 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .f-md-20 {
+        font-size: 20px;
+    }
+
+    .f-md-22 {
+        font-size: 22px;
+    }
+
+    .f-md-24 {
+        font-size: 24px;
+    }
+
+    .f-md-26 {
+        font-size: 26px;
+    }
+
+    .f-md-28 {
+        font-size: 28px;
+    }
+
+    .f-md-30 {
+        font-size: 30px;
+    }
+
+    .f-md-32 {
+        font-size: 32px;
+    }
+
+    .f-md-40 {
+        font-size: 40px;
+    }
+}
+
+
+
+
+
 .left-right {
     margin-top: 30px;
 }
@@ -14,7 +96,6 @@
 .test {
     text-align: center;
     background-color: white !important;
-    max-width: 1000px;
     margin: 0 auto;
 
 }
@@ -39,11 +120,20 @@
     width: 50%;
     height: 100px;
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid #009a9a;
+}
+
+@media screen and (min-width: 768px) {
+    .li-btn {
+        width: 80%;
+        height: 150px;
+    }
 }
 
 .space-btn {
     margin-top: 20%;
+    border-color: #009a9a;
+    background-color: aliceblue;
 }
 
 /*intro*/
@@ -149,7 +239,7 @@ input[type="submit"] {
 /*全体の書式*/
 .top {
     width: 100%;
-    background-color: #CCFFFF;
+    background-color: aliceblue;
     margin: 0%;
 }
 
@@ -157,7 +247,7 @@ input[type="submit"] {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #CCFFFF;
+    background-color: aliceblue;
     margin: 0% auto;
 }
 

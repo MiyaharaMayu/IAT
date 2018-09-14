@@ -8,14 +8,14 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body class="top">
-    <div class ="container">
-        <div class ="row">
-            <div class ="page-wrap  col-12">
+    <div class ="base">
+        <div class ="">
+            <div class ="page-wrap">
                 <div class ="page intro">
                     <h1></h1>
                     <div class="description">
-                        <h3>このたびは調査にご協力くださりありがとうございます。</h3>
-                        <ul class ="intro">
+                        <h3 class ="f-32 f-md-40">このたびは調査にご協力くださりありがとうございます。</h3>
+                        <ul class ="intro f-16 f-md-20">
                             <li>
                                 <p class ="appeal">＜注意＞</p>
                                 <p>なお、この研究への協力を断っても，途中で止めてもなんら不利益を受けることはございません。</p>

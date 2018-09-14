@@ -9,18 +9,17 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body class="test top">
-    <div class="row">
-    <div class ="col-12">
-    <div class="description">
-    </div>
+    <div class="base">
+    <div class ="">
     
-    <ul class="left-right">
-        <li class = "h3 left"></li>
-        <li class = "h3 right"></li>
+    
+    <ul class="left-right f-32 f-md-32">
+        <li class = "left"></li>
+        <li class = "right"></li>
     </ul>
 
-    <div class ="h3 next"></div>
-    <div class ="h4 words"></div>
+    <div class ="next f-32 f-md-32"></div>
+    <div class ="words f-32 f-md-32"></div>
 
     <form action="{{ url('tests') }}" method="post" name="myForm">
         @csrf
@@ -36,15 +35,15 @@
         <input class="btn" type = "submit" value ="送信">
     </form>
 
-    <ul class="ul-btn">
+    <ul class="ul-btn f-32 f-md-32">
         <li>
-            <div class = "li-btn left li-btn-left h3"></div>
+            <div class = "li-btn left li-btn-left"></div>
         </li>
         <li>
-            <div class = "li-btn right li-btn-right h3"></div>
+            <div class = "li-btn right li-btn-right"></div>
         </li>
     </ul>
-    <div class="li-btn space-btn">
+    <div class="li-btn space-btn f-32 f-md-32">
         <h2>START</h2>
     </div>
     </div>
