@@ -64,7 +64,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $id = User::max('id') + 1;
-        $pattern = $id % 2;
+        $pattern = $id % 4;
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
