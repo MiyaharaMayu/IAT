@@ -38,7 +38,8 @@ $(function () {
         [73, 69, 69, 73, 69, 73, 73, 69, 73, 69, 69, 73, 69, 69, 73, 69, 69, 69, 73, 69, 73, 69, 69, 69, 69, 69, 69, 69, 73, 73, 73, 69, 69, 73, 69, 69, 73, 69, 69, 69],
     ];
     // パターンを入れ替える
-    if (pattern != 1) {
+    // 0が上記 1:(23)(45)を入れ替えた 2: 左右入れ替え 3: 1+2のやつ
+    if (pattern == 1) {
         // console.log("gfga");
         categories = swap(categories, 1, 3);
         categories = swap(categories, 2, 4);
@@ -46,6 +47,25 @@ $(function () {
         words = swap(words, 2, 4);
         ans = swap(ans, 1, 3);
         ans = swap(ans, 2, 4);
+    } else if (pattern > 1) {
+        // カテゴリと答えを逆にする
+        categories = categories.map(function (category) {
+            return swap(category, 0, 1);
+        });
+        ans = ans.map(function (block_ans) {
+            block_ans = block_ans.map(function (answer) {
+                return answer == 69 ? 73 : 69;
+            });
+            return block_ans;
+        });
+        if (pattern == 3) {
+            categories = swap(categories, 1, 3);
+            categories = swap(categories, 2, 4);
+            words = swap(words, 1, 3);
+            words = swap(words, 2, 4);
+            ans = swap(ans, 1, 3);
+            ans = swap(ans, 2, 4);
+        }
     }
 
 
