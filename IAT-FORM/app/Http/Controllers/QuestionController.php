@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Question;
 
+use Illuminate\Support\Facades\Auth;
+
 class QuestionController extends Controller
 {
     /**
@@ -72,7 +74,8 @@ class QuestionController extends Controller
         $block_id++;
         // 5回の操作が終われば
         if($block_id == 6) {
-            return redirect('intro/');
+            Auth::logout();
+            return redirect('/fin');
         }
         return view('questions.form'.$block_id, 
                     ['block_id' => $block_id]);

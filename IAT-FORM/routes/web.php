@@ -24,3 +24,7 @@ Route::resource('questions', 'QuestionController')->only([
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/fin', function () {
+    return view('fin');
+});

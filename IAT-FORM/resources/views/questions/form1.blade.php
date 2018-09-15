@@ -50,11 +50,6 @@
           </div>
 
           <div>
-            <label>Q5.メールアドレス</label><br>
-            <input type="email" name="q[4]" value="" placeholder="xxxx@example.com" required><br>
-          </div>
-
-          <div>
             <p>Q6. 右耳の聴力を教えてください</p>
             <input id="radio-61" type="radio" name="q[5]" value="120dB以上" required>
             <label for="radio-61">120dB以上</label><br>

@@ -409,6 +409,7 @@
             <label for="radio-285">まったくそう思わない</label><br>
           </div>
 
+          <p>全ての質問に答えた場合のみ次へ進めます。</p>
           <input type="submit" value="次へ">
         </form>
       </div>
