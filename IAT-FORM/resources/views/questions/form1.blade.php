@@ -93,6 +93,8 @@
             <label for="radio-84">中学校から</label><br>
             <input id="radio-85" type="radio" name="q[7]" value="高校以降" required>
             <label for="radio-85">高校以降</label><br>
+            <input id="radio-86" type="radio" name="q[7]" value="わからない" required>
+            <label for="radio-86">わからない</label><br>
           </div>
           <div>
             <p>Q9. 家族の中に聴覚障害者はいますか</p>
@@ -304,7 +306,7 @@
             <input id="radio-234" type="checkbox" name="q[22][]" value="わからない">
             <label for="radio-234">わからない</label><br>
           </div>
-
+          <p>全ての質問に答えた場合のみ次へ進めます。</p>
           <input type="submit" value="次へ">
         </form>
       </div>

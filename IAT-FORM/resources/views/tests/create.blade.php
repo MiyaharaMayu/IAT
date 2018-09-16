@@ -37,9 +37,11 @@
 
     <ul class="ul-btn f-32 f-md-32">
         <li>
+            <div class ="btn-gide">Eキー</div>
             <div class = "li-btn left li-btn-left"></div>
         </li>
         <li>
+                <div class ="btn-gide">Iキー</div>
             <div class = "li-btn right li-btn-right"></div>
         </li>
     </ul>

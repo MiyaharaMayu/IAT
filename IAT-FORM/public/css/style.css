@@ -41,6 +41,10 @@
     .f-40 {
         font-size: 40px;
     }
+
+    .lh-m {
+        line-height: 1.4;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -128,6 +132,16 @@
         width: 80%;
         height: 150px;
     }
+
+    .ul-btn {
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-gide {
+        display: none;
+    }
 }
 
 .space-btn {
@@ -169,12 +183,12 @@ table {
 }
 
 td {
-    width: 400px;
+    width: 550px;
     height: 30px;
 }
 
 .categori {
-    width: 100px;
+    width: 130px;
 }
 
 .note li {
