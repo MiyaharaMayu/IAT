@@ -127,17 +127,6 @@
     border: 1px solid #009a9a;
 }
 
-@media screen and (min-width: 768px) {
-    .li-btn {
-        width: 80%;
-        height: 150px;
-    }
-
-    .ul-btn {
-        margin: 50px;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .btn-gide {
         display: none;
@@ -151,6 +140,37 @@
 }
 
 /*intro*/
+.img-sp {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.img-md {
+    width: 70%;
+    margin: 10px auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .li-btn {
+        width: 80%;
+        height: 150px;
+    }
+
+    .ul-btn {
+        margin: 50px;
+    }
+
+    .img-sp {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .img-md {
+        display: none;
+    }
+}
+
 .intro {
     margin-left: 0px;
     padding-left: 0px;
