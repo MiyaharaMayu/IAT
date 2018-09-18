@@ -20,8 +20,8 @@
                             <p>自分の意見とは関係なく、以下の表のとおりのグループに分類していただきます。</p>
                             <br>
                             <div class ="text-center">
-                                <img class="img-sp" src="{{ Storage::url('intro1.png') }}">
-                                <img class="img-md" src="{{ Storage::url('intro1.png') }}">
+                                <img class="img-sp" src="{{ Storage::url('public/intro1.png') }}">
+                                <img class="img-md" src="{{ Storage::url('public/intro1.png') }}">
                                 </div>
                             <!--<table border="1">
                                 <tr>
@@ -50,8 +50,8 @@
                         <p>できるだけはやく、かつ、できるだけ間違いが少なくなるようにこころがけてください。</p>
                     </div>
                     <div class ="text-center">
-                    <img class="img-sp" src="{{ Storage::url('intro.png') }}">
-                    <img class="img-md" src="{{ Storage::url('intro.png') }}">
+                    <img class="img-sp" src="{{ Storage::url('public/intro.png') }}">
+                    <img class="img-md" src="{{ Storage::url('public/intro.png') }}">
                     </div>
                     <p class ="appeal f-16 f-md-20">注意事項</p>
                     <ul class="note f-16 f-md-20">
